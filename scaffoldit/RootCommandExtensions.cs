@@ -8,7 +8,8 @@ public static class RootCommandExtensions
     public static void AddScaffoldItCommand<TCommand>(this RootCommand rootCommand) 
         where TCommand: ScaffolditCommand, new()
     {
-        var command = new TCommand();
+        var command = new TCommand()
+            .Build();
         rootCommand.AddCommand(command);
     }
 }

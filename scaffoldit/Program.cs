@@ -8,7 +8,7 @@ class Program
     static async Task<int> Main(string[] args)
     {
         var rootCommand = new RootCommand("Sample app for System.CommandLine");
-        rootCommand.AddScaffoldItCommand<NewCommand>();
+        rootCommand.AddScaffoldItCommand<NewProjectCommand>();
 
         return await rootCommand.InvokeAsync(args);
     }

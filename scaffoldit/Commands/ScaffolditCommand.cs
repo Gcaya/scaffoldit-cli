@@ -8,5 +8,5 @@ public abstract class ScaffolditCommand : Command
     {
     }
 
-    protected abstract void Init();
+    public abstract ScaffolditCommand Build();
 }
